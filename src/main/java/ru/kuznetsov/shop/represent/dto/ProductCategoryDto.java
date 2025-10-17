@@ -1,4 +1,4 @@
-package ru.kuznetsov.shop.data.dto;
+package ru.kuznetsov.shop.represent.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -11,8 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class StoreDto extends AbstractDto {
+public class ProductCategoryDto extends AbstractDto {
     private String name;
-    private Long addressId;
-    private String address;
+    private String description;
 }

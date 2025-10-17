@@ -1,4 +1,4 @@
-package ru.kuznetsov.shop.data.dto;
+package ru.kuznetsov.shop.represent.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
