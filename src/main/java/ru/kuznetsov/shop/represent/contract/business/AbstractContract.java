@@ -10,7 +10,7 @@ public interface AbstractContract<E extends AbstractDto> {
 
     List<E> getAll();
 
-    E create(E entity);
+    boolean create(E entity);
 
     E update(E entity);
 
