@@ -14,5 +14,5 @@ public interface AbstractContract<E extends AbstractDto> {
 
     E update(E entity);
 
-    void delete(E entity);
+    void delete(Long id);
 }
