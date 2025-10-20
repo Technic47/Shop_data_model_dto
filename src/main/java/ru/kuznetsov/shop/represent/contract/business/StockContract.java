@@ -9,6 +9,4 @@ public interface StockContract extends AbstractContract<StockDto> {
     Collection<StockDto> getAllByStoreId(Long storeId);
 
     Collection<StockDto> getAllByProductId(Long productId);
-
-    Collection<Boolean> createBatch(Collection<StockDto> stockDtoList);
 }
