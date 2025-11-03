@@ -16,4 +16,5 @@ public class ProductDto extends AbstractDto {
     private String description;
     private Integer price;
     private String category;
+    private String ownerId;
 }

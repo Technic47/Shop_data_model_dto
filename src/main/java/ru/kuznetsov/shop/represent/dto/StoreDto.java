@@ -15,4 +15,5 @@ public class StoreDto extends AbstractDto {
     private String name;
     private Long addressId;
     private String address;
+    private String ownerId;
 }
