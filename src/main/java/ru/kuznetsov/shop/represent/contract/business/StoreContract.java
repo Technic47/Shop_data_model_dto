@@ -9,7 +9,7 @@ import java.util.UUID;
 
 public interface StoreContract extends AbstractContract<StoreDto> {
 
-    List<StoreDto> getAll(Long id, String name, Long addressId);
+    List<StoreDto> getAll(Long id, String name, Long addressId, UUID ownerId);
 
     Collection<StoreDto> getAllByOwnerId(UUID ownerId);
 
