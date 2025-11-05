@@ -8,10 +8,4 @@ import java.util.UUID;
 public interface StockContract extends AbstractContract<StockDto> {
 
     Collection<StockDto> getAll(Long productId, Long storeId, UUID ownerId);
-
-    Collection<StockDto> getAllByStoreId(Long storeId);
-
-    Collection<StockDto> getAllByStoreIdAndOwnerId(Long storeId, UUID ownerId);
-
-    Collection<StockDto> getAllByProductId(Long productId);
 }
