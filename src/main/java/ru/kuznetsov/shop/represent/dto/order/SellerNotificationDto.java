@@ -1,19 +1,22 @@
 package ru.kuznetsov.shop.represent.dto.order;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import ru.kuznetsov.shop.represent.dto.AbstractDto;
+
+import java.util.Set;
+import java.util.UUID;
 
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BucketItemDto extends AbstractDto {
-    private Long productId;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class SellerNotificationDto {
+    private UUID id;
     private String ownerId;
-    private Integer amount;
     private Long orderId;
-    private String customerId;
+    private Set<BucketItemDto> products;
 }

@@ -33,6 +33,9 @@ public interface KafkaConst {
     String STORE_UPDATE_TOPIC = "shop_update_store";
     String ORDER_UPDATE_TOPIC = "shop_update_order";
 
+    //Other
+    String SELLER_NOTIFICATION_TOPIC = "seller_notification";
+
     //Headers
     String OPERATION_ID_HEADER = "operation_id";
 }
