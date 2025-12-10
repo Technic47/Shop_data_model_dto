@@ -18,4 +18,5 @@ public class StockDto extends AbstractDto {
     private String store;
     private String storeAddress;
     private Boolean isReserved;
+    private Long reservationOrderId;
 }
