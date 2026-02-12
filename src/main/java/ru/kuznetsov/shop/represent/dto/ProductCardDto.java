@@ -3,6 +3,7 @@ package ru.kuznetsov.shop.represent.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Map;
 
@@ -12,7 +13,7 @@ import java.util.Map;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ProductCardDto {
+public class ProductCardDto implements Serializable {
     private Long id;
     private String name;
     private String description;
