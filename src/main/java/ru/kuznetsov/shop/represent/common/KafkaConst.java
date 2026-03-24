@@ -36,6 +36,7 @@ public interface KafkaConst {
     //Order
     String ORDER_STATUS_FORMED_TOPIC = "shop_order_status_formed";
     String ORDER_STATUS_READY_TOPIC = "shop_order_status_ready";
+    String ORDER_STATUS_DELIVERED_TOPIC = "shop_order_status_delivered";
 
     //Other
     String SELLER_NOTIFICATION_TOPIC = "seller_notification";
