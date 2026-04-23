@@ -13,5 +13,5 @@ public interface OrderStatusContract extends AbstractContract<OrderStatusDto> {
 
     Optional<OrderStatusDto> getLastByOrderId(Long orderId);
 
-    Collection<OrderStatusDto> getAllByStatus(OrderStatusType status, String dateTime, String direction);
+    Collection<OrderStatusDto> getAllByStatus(OrderStatusType status, String dateTime, String direction, Integer limit);
 }

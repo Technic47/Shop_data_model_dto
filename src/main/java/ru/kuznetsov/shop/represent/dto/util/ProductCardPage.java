@@ -6,8 +6,8 @@ import ru.kuznetsov.shop.represent.dto.ProductCardDto;
 
 import java.util.List;
 
-@Setter
-@Getter
+
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

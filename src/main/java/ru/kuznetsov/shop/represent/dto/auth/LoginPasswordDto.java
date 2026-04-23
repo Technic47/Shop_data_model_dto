@@ -1,16 +1,11 @@
 package ru.kuznetsov.shop.represent.dto.auth;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class LoginPasswordDto {
-
     private String login;
     private String password;
 }

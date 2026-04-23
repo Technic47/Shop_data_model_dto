@@ -1,15 +1,13 @@
 package ru.kuznetsov.shop.represent.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class StockDto extends AbstractDto {
     private Integer amount;
@@ -17,6 +15,6 @@ public class StockDto extends AbstractDto {
     private String productName;
     private String store;
     private String storeAddress;
-    private Boolean isReserved;
+    private Boolean isReserved = false;
     private Long reservationOrderId;
 }

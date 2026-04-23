@@ -1,14 +1,12 @@
 package ru.kuznetsov.shop.represent.dto.auth;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Getter
-@Setter
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class UserRepresentationDto {
     private String username;
     private String firstName;
